@@ -404,8 +404,8 @@ def _combine_scan_reports(reports: List[str]) -> str:
 # Constants
 # ===========================================================================
 
-# MCP_SERVER_URL = "https://mcp.v2.prod.veedna.com/mcp"
-MCP_SERVER_URL = "https://mcp.commercialdev.dev.veedna.com/mcp"
+ MCP_SERVER_URL = "https://mcp.v2.prod.veedna.com/mcp"
+# MCP_SERVER_URL = "https://mcp.commercialdev.dev.veedna.com/mcp"
 
 MAX_SCAN_WORKERS = 10  # keep in sync with config.py's MAX_SCAN_WORKERS (self-contained script, no import)
 REMEDIATION_BRANCH_PREFIX = "remediation/unifai-gha"
@@ -425,7 +425,7 @@ _DEFAULT_LINEAJE_TOKEN_REFRESH_SKEW_SEC = 120
 # "trying to decrypt the string"). Exchange at SCIM instead.
 _SCIM_RENEW_ACCESS_TOKEN_PATH = "/scim/api/v1/auth/native/renew-access-token"
 _IDENTITY_RENEW_ACCESS_TOKEN_PATH = "/lineajeidentity/api/v1/auth/native/renew-access-token"
-_SCIM_SERVICE_URL_DEFAULT = "https://scim-service.commercialdev.dev.veedna.com"
+_SCIM_SERVICE_URL_DEFAULT = "https://scim-service.v2.prod.veedna.com"
 _LINEAJE_NATIVE_RENEW_ACCESS_TOKEN_URL_PROD = (
     _SCIM_SERVICE_URL_DEFAULT + _SCIM_RENEW_ACCESS_TOKEN_PATH
 )
