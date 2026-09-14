@@ -404,7 +404,7 @@ def _combine_scan_reports(reports: List[str]) -> str:
 # Constants
 # ===========================================================================
 
- MCP_SERVER_URL = "https://mcp.v2.prod.veedna.com/mcp"
+  MCP_SERVER_URL = "https://mcp.v2.prod.veedna.com/mcp"
 # MCP_SERVER_URL = "https://mcp.commercialdev.dev.veedna.com/mcp"
 
 MAX_SCAN_WORKERS = 10  # keep in sync with config.py's MAX_SCAN_WORKERS (self-contained script, no import)
